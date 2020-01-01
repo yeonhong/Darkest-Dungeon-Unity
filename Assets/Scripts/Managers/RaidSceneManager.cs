@@ -2270,6 +2270,7 @@ public class RaidSceneManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
 
+    // 진짜 game loop를 코루틴으로 돌리고 있다.. TODO
     protected virtual IEnumerator BattleRound(bool fromBattleSave = false)
     {
         if (fromBattleSave == false)
